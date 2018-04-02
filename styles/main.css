@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  font-family: "Montserrat";
+  background-color: #f6f7fc;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  text-align: left;
+  position: absolute;
+  top: 331px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  * {
+    font-size: smaller;
+  }
+}
+
+.hero {
+  background-image: url(http://s3.amazonaws.com/abn-prod/wp-content/uploads/sites/7/2017/09/Minnesota-Twins-Predictions-MLB-Betting-Season-Preview-Odds.jpg);
+  height: 400px;
+  background-size: contain;
+}
+
+p, .switch ul {
+  color: #FFF;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 151px -42px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 10px 151px -42px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 151px -42px rgba(0, 0, 0, 0.4);
+}
+
+.interactWithGraph, .overlap, .clear, .team {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.interactWithGraph {
+  background-color: red;
+}
+
+.overlap {
+  background-color: blue;
+}
+
+.clear {
+  background-color: green;
+}
+
+.team {
+  background-color: orange;
+}
+
+table {
+  width: 100%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 40, 100, 0.12);
+  border-radius: 3px;
+}
+
+th {
+  border-bottom: solid 1px #e4e8ee;
+}
+
+td {
+  border: solid 1px #e4e8ee;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch ul {
+  padding-left: 0px;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  position: center;
+}
+
+.chart {
+  max-height: 320px;
+  position: relative;
+  background-color: #FFF;
+  border: 1px solid lightgrey;
+  margin-top: 20px;
+}

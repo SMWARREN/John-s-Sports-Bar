@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>John's Sports Bar</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.5.2/c3.min.css" integrity="sha256-XbDgDVTFSKiioy1p5HKXXNZN9xEIvmJJXqII2Iha1xk=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="hero">
+  </div>
+  <div class="container">
+    <div></div>
+    <div style="background-color: #b30d38;border-radius: 20px;">
+      <p>The Minnesota Twins are an American professional baseball team based in Minneapolis, Minnesota. The Twins compete in Major League Baseball as a member club of the American League Central division.
+        <p /> The team is named after the Twin Cities area comprising Minneapolis and St. Paul. The 2017 Minnesota Twins season was the 57th season for the franchise in the Twin Cities of Minnesota, their 8th season at Target Field, and their 117th overall
+        in the American League.
+        <p /> The Twins began the season on April 3rd at home against the Kansas City Royals and finished the year on October 1st at home against the Detroit Tigers.</p>
+      <center style="background: #0d2a51;color: white;padding: 20px;">
+        <div class="overlap">Toggle Overlap</div>
+        <div class="clear">Clear Graph </div>
+        <div class="team">Show Team Averages vs Provided Players </div>
+        <h1><u>Batting Averages</u></h1></center>
+      <div class="chart" id="chart">
+      </div>
+      <div class="switch"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Split</th>
+            <th>G</th>
+            <th>GS</th>
+            <th>PA</th>
+            <th>BA</th>
+          </tr>
+        </thead>
+        <tbody class="table-insert">
+        </tbody>
+      </table>
+    </div>
+    <div></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js" integrity="sha256-j2LsvgOlQFIb2Mphb+tX7d5pNmFdpsJU+s5GNo3z63g=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.5.2/c3.js" integrity="sha256-sinktyjSw4YWanApakR2fICJMkqZqyvRPU0D6DyAndM=" crossorigin="anonymous"></script>
+  <script src="./js/charts.js" charset="utf-8"></script>
+  <script src="./js/chartFunctions.js" charset="utf-8"></script>
+  <script>let init = new Charts();
+  let xval = [0.147, 0.254, 0.184, 0.387, 0.324, 0.27]
+  let yval = ["April/March", "May", "June", "July", "August", "Sept/Oct"]
+
+  var initData = [];
+  for (var i = 0; i < 6; i++) {
+    initData.push({
+      value: xval[i],
+      label: yval[i]
+    });
+  }
+  let data = initData;
+  </script>
+</body>
+
+</html>
