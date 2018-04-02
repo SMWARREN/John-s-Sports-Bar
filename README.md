@@ -1,4 +1,4 @@
-# Minnesota-Twins - [VIEW DEMO](https://mildfun.com/JSB)
+# Minnesota-Twins - [VIEW DEMO](http://mildfun.com/JSB)
 
 ![](https://github.com/SMWARREN/Minnesota-Twins/blob/master/ss1.png)
 
